@@ -10993,3 +10993,19 @@ section.resume-section .resume-section-content {
   }
 }
 
+@media print {
+  /* Force the profile image container to appear in print */
+  #sideNav .d-none.d-lg-block {
+    display: block !important;
+  }
+
+  /* Force the image itself to render */
+  #sideNav img.img-profile {
+    display: block !important;
+    visibility: visible !important;
+    max-width: 150px;   /* optional: keeps it reasonable on paper */
+    height: auto !important;
+  }
+}
+
+
