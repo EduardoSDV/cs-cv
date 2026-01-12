@@ -10970,3 +10970,15 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* Ensure profile image appears when printing */
+@media print {
+  .img-profile {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  #sideNav {
+    position: relative;
+  }
+}
+
